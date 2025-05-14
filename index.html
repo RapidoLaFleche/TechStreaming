@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechStream</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>TechStream</h1>
+    <nav>
+      <a href="#">Films</a>
+      <a href="#">Séries</a>
+      <a href="#">Animes</a>
+      <input type="text" id="searchInput" placeholder="🔍">
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="featured">
+      <div class="featured-video">
+        <video id="featuredPlayer" controls></video>
+      </div>
+    </section>
+
+    <section class="grid">
+      <h2 id="anime-title">Animes - Série d'animation japonaise</h2>
+      <div class="video-grid">
+        <div class="video-item" data-title="inazuma eleven" onclick="loadVideo('videos/inazuma.m3u8')">
+          <img src="images/inazuma.jpg">
+        </div>
+
+        <div class="video-item" data-title="yu gi oh" onclick="loadVideo('videos/yu.m3u8')">
+          <img src="images/yugioh.jpg">
+        </div>
+
+        <div class="video-item" data-title="les souvenirs de gravity falls" onclick="loadVideo('videos/gravity.m3u8')">
+          <img src="images/souvenirs de gravityfalls.webp">
+        </div>
+
+        <div class="video-item" data-title="les souvenirs de gravity falls" onclick="loadVideo('videos/drstone.m3u8')">
+          <img src="images/drstone.png">
+        </div>
+
+        <div class="video-item" data-title="les souvenirs de gravity falls" onclick="loadVideo('videos/fairy.m3u8')">
+          <img src="images/fairy.jpg">
+        </div>
+
+        <div class="video-item" data-title="les souvenirs de gravity falls" onclick="loadVideo('videos/db.m3u8')">
+          <img src="images/db.jpg">
+        </div>
+
+      </div>
+    </section>
+
+    <section class="grid">
+      <h2 id="films-title">Films - Vous n'allez pas vous ennuyez </h2>
+      <div class="video-grid">
+        <div class="video-item" data-title="inazuma eleven" onclick="loadVideo('videos/')">
+          <img src="images/soon.jpg">
+        </div>
+
+        <div class="video-item" data-title="yu gi oh" onclick="loadVideo('videos/')">
+          <img src="images/soon.jpg">
+        </div>
+
+        <div class="video-item" data-title="les souvenirs de gravity falls" onclick="loadVideo('videos/')">
+          <img src="images/soon.jpg">
+        </div>
+
+        <div class="video-item" data-title="les souvenirs de gravity falls" onclick="loadVideo('videos/')">
+          <img src="images/soon.jpg">
+        </div>
+
+        <div class="video-item" data-title="les souvenirs de gravity falls" onclick="loadVideo('videos/')">
+          <img src="images/soon.jpg">
+        </div>
+
+        <div class="video-item" data-title="les souvenirs de gravity falls" onclick="loadVideo('videos/')">
+          <img src="images/soon.jpg">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
